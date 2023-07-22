@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Train Reservation System</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #444;
+      padding: 0.5rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: #891717;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    .form-group {
+      margin-bottom: 1rem;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    input[type="number"] {
+      width: 100%;
+      padding: 0.5rem;
+    }
+
+    button {
+      padding: 0.5rem 1rem;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 0.5rem;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Train Reservation System</h1>
+  </header>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Reservations</a>
+    <a href="#">Contact</a>
+  </nav>
+  <main>
+    <h2>Make a Reservation</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="train">Train:</label>
+        <input type="text" id="train" name="train" required>
+      </div>
+      <div class="form-group">
+        <label for="date">Date of Travel:</label>
+        <input type="date" id="date" name="date" required>
+      </div>
+      <div class="form-group">
+        <label for="seats">Number of Seats:</label>
+        <input type="number" id="seats" name="seats" min="1" required>
+      </div>
+      <button type="submit">Make Reservation</button>
+    </form>
+
+    <h2>Current Reservations</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Train</th>
+          <th>Date of Travel</th>
+          <th>Number of Seats</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Rows for displaying current reservations will be added here -->
+      </tbody>
+    </table>
+  </main>
+</body>
+</html>
